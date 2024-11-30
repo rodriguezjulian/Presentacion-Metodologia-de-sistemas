@@ -68,4 +68,20 @@ section .d-flex {
     height: auto; /* Mantiene las proporciones */
     margin-right: 20px; /* Añade espacio entre la imagen y el texto */
   }
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600px;
+    color: black;
+    font-style: normal;
+  }
+  
+  .potta-one-regular {
+    font-family: "Potta One", serif;
+    font-weight: 600px;
+    color: black;
+    font-style: normal;
+  }
+  .grande{
+    font-size: 3rem !important;
+  }
   
