@@ -2,16 +2,55 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Altura fija para el carrusel */
-    overflow: hidden; /* Evita que las imágenes sobresalgan */
-    background-color: #f8f9fa; /* Fondo claro opcional */
+    height: 100%; /* Altura completa del carrusel */
+  }
+  
+  .carousel-item {
+    height: 300px; /* Altura fija del carrusel */
+    background-color: #000; /* Fondo negro para evitar bordes blancos */
   }
   
   .carousel-img {
-    height: 100%; /* Asegura que las imágenes se adapten al contenedor */
-    width: auto; /* Mantiene la proporción original de la imagen */
-    object-fit: contain; /* Ajusta las imágenes dentro del espacio disponible */
-    max-width: 100%; /* No exceder el ancho del contenedor */
-    border-radius: 8px; /* Opcional: esquinas redondeadas */
+    width: 100%; /* La imagen ocupará todo el ancho del carrusel */
+    height: 100%; /* La imagen ocupará todo el alto del carrusel */
+    object-fit: cover; /* Cubre completamente el espacio disponible, recortando si es necesario */
+  }
+  /* Ajustes específicos para las imágenes en la sección "¿Qué Ofrecemos?" */
+section .img-fluid {
+    max-width: 350px; /* Tamaño máximo en ancho */
+    max-height: 350px; /* Tamaño máximo en alto */
+    object-fit: contain; /* Mantiene las proporciones originales */
+    margin-right: 15px; /* Espaciado con el texto */
+  }
+  
+  /* Opcional: Asegura que las columnas no pierdan alineación */
+  section .d-flex {
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente en pantallas pequeñas */
+  }
+  
+  /* Centrar imágenes en "¿Qué Ofrecemos?" */
+section .d-flex {
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-wrap: wrap; /* Permite que el contenido se ajuste automáticamente en pantallas pequeñas */
+  }
+  
+  section .img-fluid {
+    max-width: 250px; /* Tamaño máximo en ancho */
+    max-height: 250px; /* Tamaño máximo en alto */
+    object-fit: contain; /* Mantiene las proporciones originales */
+    margin: auto; /* Centra la imagen dentro del espacio disponible */
+  }
+  .fondo {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #76d9eb, #c2e0e2);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
