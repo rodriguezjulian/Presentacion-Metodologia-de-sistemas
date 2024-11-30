@@ -1,56 +1,31 @@
-.carousel-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Altura completa del carrusel */
+/* Modern carousel adjustments */
+.modern-carousel {
+    border-radius: 15px; /* Esquinas redondeadas */
+    overflow: hidden; /* Oculta el contenido que sobresale */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra moderna */
+    margin: auto; /* Centra el carrusel horizontalmente */
+    max-width: 800px; /* Ancho máximo del carrusel */
   }
   
-  .carousel-item {
-    height: 300px; /* Altura fija del carrusel */
-    background-color: #000; /* Fondo negro para evitar bordes blancos */
+  .carousel-inner {
+    height: 250px; /* Altura más reducida del carrusel */
   }
   
-  .carousel-img {
-    width: 100%; /* La imagen ocupará todo el ancho del carrusel */
-    height: 100%; /* La imagen ocupará todo el alto del carrusel */
-    object-fit: cover; /* Cubre completamente el espacio disponible, recortando si es necesario */
-  }
-  /* Ajustes específicos para las imágenes en la sección "¿Qué Ofrecemos?" */
-section .img-fluid {
-    max-width: 350px; /* Tamaño máximo en ancho */
-    max-height: 350px; /* Tamaño máximo en alto */
-    object-fit: contain; /* Mantiene las proporciones originales */
-    margin-right: 15px; /* Espaciado con el texto */
+  .carousel-item img {
+    object-fit: cover; /* Cubre completamente el contenedor sin deformar */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
   }
   
-  /* Opcional: Asegura que las columnas no pierdan alineación */
-  section .d-flex {
-    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente en pantallas pequeñas */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para los controles */
+    border-radius: 50%; /* Forma circular para los controles */
   }
   
-  /* Centrar imágenes en "¿Qué Ofrecemos?" */
-section .d-flex {
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    flex-wrap: wrap; /* Permite que el contenido se ajuste automáticamente en pantallas pequeñas */
-  }
-  
-  section .img-fluid {
-    max-width: 250px; /* Tamaño máximo en ancho */
-    max-height: 250px; /* Tamaño máximo en alto */
-    object-fit: contain; /* Mantiene las proporciones originales */
-    margin: auto; /* Centra la imagen dentro del espacio disponible */
-  }
-  .fondo {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(45deg, #76d9eb, #c2e0e2);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px; /* Ajusta el ancho de los controles */
+    height: 50px; /* Ajusta la altura de los controles */
   }
   
