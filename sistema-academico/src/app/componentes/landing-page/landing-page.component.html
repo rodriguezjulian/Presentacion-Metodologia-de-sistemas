@@ -1,44 +1,68 @@
 <div class="container-fluid p-4">
-    <!-- Hero Section -->
+    <!-- Hero Section with Carousel -->
     <header class="bg-primary text-white text-center py-5">
+      <div id="heroCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../../assets/utn.jpeg" class="d-block w-100" alt="Carrusel 1">
+          </div>
+          <div class="carousel-item">
+            <img src="../../../assets/salaDePc.jpeg" class="d-block w-100" alt="Carrusel 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <h1>Sistema Académico</h1>
       <p class="lead">Simplificando la experiencia académica para estudiantes, docentes y administradores.</p>
       <button class="btn btn-light btn-lg mt-3">Descubre más</button>
     </header>
   
-    <!-- Features Section -->
+    <!-- Features Section with Images -->
     <section class="mt-5">
       <div class="row text-center">
         <div class="col-md-4 mb-4">
-          <i class="bi bi-people-fill display-4 text-primary"></i>
+          <img src="../../../assets/admin.jpeg" alt="Administradores" class="img-fluid rounded mb-3">
           <h3>Administradores</h3>
           <p>Gestión completa de materias, alumnos y profesores desde una interfaz intuitiva.</p>
         </div>
         <div class="col-md-4 mb-4">
-          <i class="bi bi-book-fill display-4 text-primary"></i>
+          <img src="../../../assets/profesor.jpeg" alt="Docentes" class="img-fluid rounded mb-3">
           <h3>Docentes</h3>
           <p>Carga y consulta de calificaciones con acceso rápido a la información de los alumnos.</p>
         </div>
         <div class="col-md-4 mb-4">
-          <i class="bi bi-person-fill display-4 text-primary"></i>
+          <img src="../../../assets/estudiante.jpeg" alt="Alumnos" class="img-fluid rounded mb-3">
           <h3>Alumnos</h3>
           <p>Consulta de estado académico, inscripción a materias y encuestas desde cualquier dispositivo.</p>
         </div>
       </div>
     </section>
   
-    <!-- Benefits Section -->
+    <!-- Benefits Section with Illustrative Images -->
     <section class="bg-light py-5 mt-5">
       <div class="container">
         <h2 class="text-center">¿Qué Ofrecemos?</h2>
         <div class="row mt-4">
-          <div class="col-md-6">
-            <h4>Velocidad y Escalabilidad</h4>
-            <p>Nuestro sistema garantiza un acceso rápido y una arquitectura que soporta miles de usuarios simultáneamente.</p>
+          <div class="col-md-6 d-flex align-items-center">
+            <img src="assets/images/speed.jpg" alt="Velocidad y Escalabilidad" class="img-fluid rounded me-3">
+            <div>
+              <h4>Velocidad y Escalabilidad</h4>
+              <p>Nuestro sistema garantiza un acceso rápido y una arquitectura que soporta miles de usuarios simultáneamente.</p>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h4>Diseño Accesible</h4>
-            <p>Cumplimos con la Ley 24901 para garantizar accesibilidad total a usuarios con discapacidades.</p>
+          <div class="col-md-6 d-flex align-items-center">
+            <img src="assets/images/accessibility.jpg" alt="Diseño Accesible" class="img-fluid rounded me-3">
+            <div>
+              <h4>Diseño Accesible</h4>
+              <p>Cumplimos con la Ley 24901 para garantizar accesibilidad total a usuarios con discapacidades.</p>
+            </div>
           </div>
         </div>
       </div>
